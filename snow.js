@@ -18,7 +18,6 @@ if (localStorage.getItem('fon') !== null) {
 }
 
 function changeImg() {
-    console.log(img_i);
     canvas.style.backgroundImage = `url(${images[img_i]})`
     img_i++
     localStorage.setItem('fon', img_i)

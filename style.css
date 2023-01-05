@@ -6,15 +6,43 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+.container {
     text-transform: capitalize;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
     gap: 20px;
     min-height: 100vh;
     padding: 20px;
     font-family: monospace;
     font-size: 18px;
+
+}
+
+.menu-cont {
+    color: white;
+    padding: 20px 20px 20px 30px;
+    background-color: #00000094;
+    border-radius: 10px;
+    margin: 0;
+    height: fit-content;
+    font-family: system-ui;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    list-style: square;
+    word-spacing: 1px;
+}
+
+.menu-cont-title {
+    text-align: center;
+    padding: 0;
+    font-size: 22px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
 }
 
 #canvas {
@@ -32,22 +60,6 @@ body {
     bottom: 0;
     background-color: black;
     z-index: -1;
-}
-
-.par {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.par>div {
-    background-color: #00000066;
-    padding: 10px;
-    border-radius: 20px;
-    min-width: 410px;
 }
 
 img {
@@ -76,17 +88,12 @@ h1 {
         height: auto;
     }
 
-    .par>div {
-        width: 100%;
-        min-width: auto;
-    }
-
-    h1 {
+    .menu-cont-title {
         font-size: 18px;
         text-align: center;
     }
 
-    h3 {
+    .menu-cont>li {
         font-size: 16px;
     }
 }
